@@ -1,8 +1,8 @@
 class Character:
-    def __init__(self) -> None:
+    def __init__(self, char: str) -> None:
+        self.char: str = char
         self.room = None
         self.is_alive = True
-        self.char_type = None
         self.player: int = None
 
     def set_player(self, player: int) -> None:
